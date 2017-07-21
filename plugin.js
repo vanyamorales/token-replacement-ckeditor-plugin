@@ -1,5 +1,5 @@
 ﻿/**
- * @fileOverview The "token" plugin.
+ * @fileOverview The "VanyaTokens" plugin.
  *
  */
 
@@ -10,7 +10,7 @@ function escapeRegExp(string){
 }
 
 ( function() {
-	CKEDITOR.plugins.add( 'token', {
+	CKEDITOR.plugins.add( 'VanyaToken', {
 		requires: 'widget,dialog',
 		lang: 'en,ru',
 		icons: 'token',
@@ -101,7 +101,7 @@ function escapeRegExp(string){
 
 						// Adds token identifier as innertext.
 						innerElement.add( new CKEDITOR.htmlParser.text( match ) );
-						widgetWrapper = editor.widgets.wrapElement( innerElement, 'token' );
+						widgetWrapper = editor.widgets.wrapElement( innerElement, 'VanyaToken' );
 
 						// Return outerhtml of widget wrapper so it will be placed
 						// as replacement.
